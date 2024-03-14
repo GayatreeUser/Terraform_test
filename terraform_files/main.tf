@@ -1,11 +1,10 @@
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
-resource "aws_instance" "testinst" {
-  ami           = "ami-0c94855ba95c574c8" #  AMI ID
-  instance_type = "t2.micro" 
-
+resource "aws_instance" "test_instance" {
+  ami           = "ami-0d7a109bf30624c99"
+  instance_type = "t2.micro"
   tags = {
-    Name = "example-instance"
+    Name = "test_instance"
   }
 }
