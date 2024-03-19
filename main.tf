@@ -1,4 +1,3 @@
-test_branch
 provider "aws" {
   region = "us-east-1"
 }
